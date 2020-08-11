@@ -1,4 +1,4 @@
-import graph
+from graph import Graph
 
 def topological_sort(graph):
     stack = []
@@ -20,7 +20,7 @@ def topological_sort_util(vertex, stack, visited):
 
 
 if __name__ == '__main__':
-    graph = graph.Graph(True)
+    graph = Graph(True)
     graph.add_edge(1,3)
     graph.add_edge(1,2)
     graph.add_edge(3,4)
